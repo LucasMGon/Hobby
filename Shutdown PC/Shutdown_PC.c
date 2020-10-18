@@ -4,11 +4,11 @@
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
-	//Ajustar Cores do terminal
+	//Ajustar cores do terminal
 	system("setterm -foreground white -background blue || color 71");
 	
 	unsigned short int opc;
-	int ret2;	//Dependendo da IDE, pode mostrar que não esta em uso essa variavel
+	int ret2;	//Dependendo da IDE, pode mostrar que não esta em uso essa variável
 	int tempo;
 	char desligar[100];
 	
@@ -34,15 +34,15 @@ int main(){
 					ret2 = system(desligar);
 				
 				#elif defined _WIN32
-					ret2 = sprintf(desligar, "shutdown -s -t %d", tempo); //formata a string desligar
-					printf("ret2 = %d\n", ret2);	//exibe o valor de retorno da função sprintf
-					ret2 = system(desligar);	//usa system() para executar o comando formatado com a função sprintf()				
+					ret2 = sprintf(desligar, "shutdown -s -t %d", tempo); //Formata a string desligar
+					printf("ret2 = %d\n", ret2);	//Exibe o valor de retorno da função sprintf
+					ret2 = system(desligar);	//Usa system() para executar o comando formatado com a função sprintf()				
 				#endif
 			break;
 			
 			case 2:
 				system("clear || cls");
-				printf("\n\n\t\tDesenvolvedor: Lucas M. Gon�alves\n"
+				printf("\n\n\t\tDesenvolvedor: Lucas M. Gonçalves\n"
 					   "\t\tBrasil, 31 de Dezembro de 2017\n\t\t");
 				system("pause || sleep 3000");
 			break;
